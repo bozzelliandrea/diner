@@ -1,0 +1,19 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false --config=../../jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bozzelliandrea/diner.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bozzelliandrea/diner/issues"
+  },
+  "homepage": "https://github.com/bozzelliandrea/diner#readme"
+}
