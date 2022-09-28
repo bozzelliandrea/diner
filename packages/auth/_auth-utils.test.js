@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 
 const test_user = {
     username: "foo",
+    email: 'foo@hooly.com',
     password: "theSecretPassword",
     role: "USER"
 }
@@ -40,3 +41,5 @@ describe('auth utils', function () {
         });
     })
 });
+
+module.exports = { test_user }
