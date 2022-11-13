@@ -1,9 +1,10 @@
 {
-  "name": "test_km_node",
+  "name": "diner",
   "version": "0.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
+    "dev:workspace": "npm init -w ./packages/category",
     "start": "node server.js",
     "start:dev": "nodemon server.js",
     "build": "esbuild server.js --bundle --platform=node --outfile=dist/target.js",
@@ -21,7 +22,9 @@
   "homepage": "https://github.com/bozzelliandrea/test_km_node#readme",
   "workspaces": [
     "packages/auth",
-    "packages/core"
+    "packages/core",
+    "packages/order",
+    "packages/category"
   ],
   "dependencies": {
     "dotenv": "^16.0.1",

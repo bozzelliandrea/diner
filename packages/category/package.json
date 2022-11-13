@@ -1,8 +1,9 @@
 {
-  "name": "core",
-  "version": "0.0.1",
+  "name": "category",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "test": "jest --collectCoverage=false --config=../../jest.config.js"
   }

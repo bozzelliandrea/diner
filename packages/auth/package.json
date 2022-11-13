@@ -5,15 +5,5 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --collectCoverage=false --config=../../jest.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bozzelliandrea/test_km_node.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bozzelliandrea/test_km_node/issues"
-  },
-  "homepage": "https://github.com/bozzelliandrea/test_km_node#readme"
+  }
 }
