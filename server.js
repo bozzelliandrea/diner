@@ -7,6 +7,7 @@ const server = express();
 
 server.use(express.json())
 server.use('/auth', require('./packages/auth/index').router)
+server.use('/category', require('./packages/category/index').router)
 server.use(core.errorHandler)
 server.listen(3000, () => {
     console.log("Diner Server Ready -> http://localhost:3000")
