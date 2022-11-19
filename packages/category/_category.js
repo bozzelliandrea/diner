@@ -7,27 +7,25 @@ function Category(request) {
     this.description = request.description;
     this.color = request.color;
     this.name = request.name;
-}
-
-Category.prototype.isCreatable = () => {
-    if(!this.name) {
-        this.#status = "Required field missing: Name is not defined!"
-        return false;
+    this.isCreatable = () => {
+        if(!this.name) {
+            this._status = "Required field missing: Name is not defined!"
+            return false;
+        }
+    
+        return true;
+    }
+    this.isUpgradeable = () => {
+        if(!this.id) {
+            this._status = "Required field missing: Id is not defined!"
+            return false;
+        } 
+    
+        return this.isCreatable();
     }
 
-    return true;
+    this.getStatus = () => this._status;
 }
-
-Category.prototype.isUpgradeable = () => {
-    if(!this.id) {
-        this.#status = "Required field missing: Id is not defined!"
-        return false;
-    } 
-
-    return this.isCreatable();
-}
-
-Category.prototype.getStatus = () => this.#status;
 
 async function create(category) {
 

@@ -8,7 +8,9 @@ const { Category,
     } = require('./_category');
 
 _router.route('/')
-    .get((req, res, next) => {})
+    .get((req, res, next) => {
+        res.status(501).send("Not Implemented!")
+    })
     .post((req, res, next) => {
         create(new Category(req.body))
         .then(r => res.status(r.code).send(r))
